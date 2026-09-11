@@ -40,9 +40,9 @@
         $email = $_POST["email"];
         $telefone = $_POST["telefone"];
 
-        echo "Nome recebido: " . $nome;
-        echo "E-mail recebido: " . $email;
-        echo "Telefone recebido: " . $telefone;
+        echo "Nome recebido: " . $nome . "<br>";
+        echo "E-mail recebido: " . $email . "<br>";
+        echo "Telefone recebido: " . $telefone . "<br>";
     }
     ?>
 </body>
