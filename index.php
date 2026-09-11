@@ -16,15 +16,15 @@
         <form method="POST">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Insira seu nome">
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Insira seu nome">
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">E-Mail</label>
-                <input type="email" class="form-control" id="email" placeholder="Insira seu email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Insira seu email">
             </div>
             <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone</label>
-                <input type="tel" class="form-control" id="telefone" placeholder="Insira seu telefone">
+                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Insira seu telefone">
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
         </form>
