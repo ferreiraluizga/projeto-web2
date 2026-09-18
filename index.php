@@ -40,9 +40,17 @@
         $email = $_POST["email"];
         $telefone = $_POST["telefone"];
 
-        echo "Nome recebido: " . $nome . "<br>";
-        echo "E-mail recebido: " . $email . "<br>";
-        echo "Telefone recebido: " . $telefone . "<br>";
+        $databaseUrl = getenv("DATABASE_URL");
+
+        $conexao = pg_connect($databaseUrl);
+
+        pg_query_params(
+            $conexao,
+            "INSERT INTO usuarios (nome, email, telefone) VALUES ($1)",
+            array($nome, $email, $telefone)
+        );
+
+        echo "Cadastro realizado com sucesso";
     }
     ?>
 </body>
